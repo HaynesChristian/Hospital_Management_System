@@ -1,0 +1,64 @@
+    <html>
+        <head>
+
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <script type="text/javascript">
+                function validate()
+                { 
+            if( document.form.Inventory_Batch_Id.value == "" )
+             {
+                alert( "Please provide Inventory Batch!" );
+                document.form.Inventory_Batch_Id.focus() ;
+                return false;
+                }
+             if( document.form.Last_Cleaning_Date.value == "" )
+             {
+                alert( "Please Select Last Cleaning Date!" );
+                document.form.Last_Cleaning_Date.focus() ;
+                return false;
+             }
+           if( document.form.Next_Cleaning_Date.value == "" )
+             {
+                alert( "Please Select Last Cleaning Date!" );
+                document.form.Next_Cleaning_Date.focus() ;
+                return false;
+
+            </script>
+        </head>
+        <body>
+            <form method="POST" action="inventory.php" autocomplete="off">
+
+                <center>
+                    <h1>Inventory Cleaning</h1>
+                <table border="1">
+                    <tbody>
+                        <tr>
+                            <td><b>Inventory Batch :</b></td>
+                            <td>
+                            <select name="inventory">
+                                    <option>Batch 1</option>
+                                    <option>Batch 2</option>
+                                    <option>Batch 3</option>
+                                </select>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td><b>Last Cleaning Date :</b></td>
+                            <td><input type="date" name="ldate" /></td>
+                        </tr>
+
+                        <tr>
+                            <td><b>Next Cleaning Date :</b></td>
+                            <td><input type="date" name="ndate" /></td>
+                        </tr>
+                        <tr>
+                            <td align="center"><span><input type="submit" value="submit" onclick="javascript.validate" /></span></td>
+                        </tr>
+                    </tbody>
+                </table>
+                        </form>
+    </center>
+        </body>
+    </html>

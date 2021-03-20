@@ -1,0 +1,292 @@
+<html>
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script type="text/javascript">
+            function validate()
+            { 
+         if( document.form.Employee_Name.value == "" )
+         {
+            alert( "Please provide your name!" );
+            document.form.Employee_Name.focus() ;
+            return false;
+         }
+       if( document.form.Employee_Designation.value == "" )
+         {
+            alert( "Please Enter Your Designation!" );
+            document.form.Employee_Designation.focus() ;
+            return false;
+         }
+         if( document.form.Employee_contact.value == "" )
+         {
+            alert( "Please Enter Your Contact No.!" );
+            document.form.Employee_contact.focus() ;
+            return false;
+         }
+         if( document.form.Employee_Email.value == "" )
+         {
+            alert( "Please Enter Your Valid E-mail !" );
+            document.form.Employee_Email.focus() ;
+            return false;
+         }
+         if( document.form.Birth_Date.value == "" )
+         {
+            alert( "Please Enter Your Birth Date !" );
+            document.form.Birth_Date.focus() ;
+            return false;
+         }
+         if( document.form.Employee_Address.value == "" )
+         {
+            alert( "Maximum 50 Characters are valid" );
+            document.form.Employee_Address.focus() ;
+            return false;
+         }
+         if( document.form.Gender.value == '')
+         {
+            alert( "Please Select Your Gender!" );
+            document.form.Gender.focus() ;
+            return false;
+         }
+         if( document.form.Education.value == "" )
+         {
+            alert( "Please select your Education!" );
+            document.form.Education.focus() ;
+            return false;
+         }
+         if( document.form.Join_Date.value == "" )
+         {
+            alert( "Please Select Your Join Date!" );
+            document.form.Join_Date.focus() ;
+            return false;
+         }
+         if( document.form.Basic_Salary.value == "" )
+         {
+            alert( "Basic Salary !" );
+            document.form.Basic_Salary.focus() ;
+            return false;
+         }
+         if( document.form.Uniform_Issued_Date.value == "" )
+         {
+            alert( "Please Enter Your Uniform Issued Date!" );
+            document.form.Uniform_Issued_Date.focus() ;
+            return false;
+         }
+         if( document.form.Incremental_qtr_No.value == "" )
+         {
+            alert( "Please Select Your Increment quarter Date!" );
+            document.form.Incremental_qtr_No.focus() ;
+            return false;
+         }
+         if( document.form.Last_Increment_Date.value == "" )
+         {
+            alert( "Please Select Your Last Increment Date!" );
+            document.form.Last_Increment_Date.focus() ;
+            return false;
+         }
+         if( document.form.IFSC_Code.value == "" )
+         {
+            alert( "Please Enter Your Bank ISFC Code!" );
+            document.form.IFSC_Code.focus() ;
+            return false;
+         }
+         if( document.form.Bank_Acc_No.value == "" )
+         {
+            alert( "Please Enter Your Bank Account Number!" );
+            document.form.Bank_Acc_No.focus() ;
+            return false;
+         }
+         if( document.form.Department.value == "" )
+         {
+            alert( "Please Enter Your Department!" );
+            document.form.Department.focus() ;
+            return false;
+         }
+         if( document.form.Grade.value == "" )
+         {
+            alert( "Please Enter Your Grade!" );
+            document.form.Grade.focus() ;
+            return false;
+         }
+         if( document.form.Dearness_Allowance.value == "" )
+         {
+            alert( "Please Enter Your DA Percentage!" );
+            document.form.Dearness_Allowance.focus() ;
+            return false;
+         }
+         if( document.form.House_Rent_Allowance.value == "" )
+         {
+            alert( "Please Enter Your HRA Percentage!" );
+            document.form.House_Renat_Allowance.focus() ;
+            return false;
+         }
+         if( document.form.PF_No.value == "" )
+         {
+            alert( "Please Enter Your PF No!" );
+            document.form.PF_No.focus() ;
+            return false;
+        }
+         if( document.form.PF_PCTG.value == "" )
+         {
+            alert( "Please Enter Your PF Percentage!" );
+            document.form.PF_PCTG.focus() ;
+            return false;
+         }
+         if( document.form.FPS_PCTG.value == "" )
+         {
+            alert( "Please Enter Your FPS Percentage!" );
+            document.form.FPS_PCTG.focus() ;
+            return false;
+         }
+         if( document.form.Professional_Tax.value == "" )
+         {
+            alert( "Please Enter Your Professional Tax Percentage!" );
+            document.form.Professional_Tax.focus() ;
+            return false;
+         }
+         if( document.form.Group_LIC_Premium.value == "" )
+         {
+            alert( "Please Enter Your GLIC Percentage!" );
+            document.form.Group_LIC_Premium.focus() ;
+            return false;
+         }
+         
+         if( document.form.Status.value == "" )
+         {
+            alert( "Please Enter Employee Status!" );
+            document.form.Status.focus()
+            return false;
+         }
+        </script>
+    </head>
+    <body>
+        <form method="POST" action="employee.php" autocomplete="off">
+            
+            <center>
+                <h1>Employee Details</h1>
+            <table border="1">
+                <tbody>
+                    <tr>
+                        <td><b>Employee Name :</b></td>
+                        <td><input type="text" name="ename" /></td>
+                    
+                        <td><b>Employee Designation :</b></td>
+                        <td><input type="text" name="designation" /></td>
+                    </tr>
+                    <tr>
+                        <td><b>Employee_contact :</b></td>
+                        <td><input type="tel" name="mobile" pattern="[0-9]{10}" /></td>
+                    
+                        <td><b>Employee Email :</b></td>
+                        <td><input type="email" name="mail" /></td>
+                    </tr>
+                    <tr>
+                        <td><b>Birth Date :</b></td>
+                        <td><input type="date" name="birth" /></td>
+                    
+                        <td><b>Employee Address :</b></td>
+                        <td><textarea name="address" rows="4" cols="20">
+                            </textarea></td>
+                    </tr>
+                    <tr>
+                        <td><b>Gender:</b></td>
+                        <td>
+                            <input type="radio" name="gender" value="male" />Male
+                            <input type="radio" name="gender" value="female" />Female
+                        </td>
+                    
+                        <td><b>Education  :</b></td>
+                        <td>
+                            <select name="education">
+                                <option>10th</option>
+                                <option>12th</option>
+                                <option>Bachelor</option>
+                                <option>Master</option>
+                                <option>PHD</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><b>Join Date:</b></td>
+                        <td> <input type="date" name="join"/> </td>
+                    
+                        <td><b>Basic Salary :</b></td>
+                        <td><input type="text" name="bsalary" /></td>
+                    </tr>
+                    <tr>
+                        <td><b>Uniform Issued</b></td>
+                        <td><input type="date" name="uniform"/></td>
+                    
+                        <td><b>Incremental Quarter</b></td>
+                        <td><input type="text" name="increment"/></td>
+                    </tr>
+                    <tr>
+                        <td><b>Last Increment</b></td>
+                        <td><input type="date" name="lincrement"/></td>
+                    
+                        <td><b>IFSC Code :</b></td>
+                        <td><input type="text" name="ifsc" /></td>
+                    </tr>
+                    <tr>
+                        <td><b>Bank Acc Number :</b></td>
+                        <td><input type="text" name="bank" /></td>
+                    
+                        <td><b>Department :</b></td>
+                        <td><input type="text" name="department" /></td>
+                    </tr>
+                    <tr>
+                        <td><b>Grade :</b></td>
+                        <td>
+                            <select name="grade">
+                                <option>5500</option>
+                                <option>8500</option>
+                                <option>10000</option>
+                            </select>
+                        </td>
+                    
+                        <td><b>Dearness  Allowance:</b></td>
+                        <td><input type="text" name="da" /></td>
+                    </tr>
+                    <tr>
+                        <td><b>House Rent Allowance :</b></td>
+                        <td><input type="text" name="hra" /></td>
+                    
+                        <td><b>PF Number</b></td>
+                        <td><input type="text" name="pfno"/></td>
+                    </tr>
+                    <tr>
+                        <td><b>PF Percentage :</b></td>
+                        <td><input type="text" name="pfper" /></td>
+                    
+                        <td><b>FPS Percentage :</b></td>
+                        <td><input type="text" name="familypf" /></td>
+                    </tr>
+                    <tr>
+                        <td><b>Professional Tax :</b></td>
+                        <td><input type="text" name="professional" /></td>
+                    
+                        <td><b>Group LIC Premium :</b></td>
+                        <td><input type="text" name="glic" /></td>
+                    </tr>
+                    <tr>
+                        <td ><b>Status :</b></td>
+                        <td><input type="text" name="status" /></td>
+                    </tr>
+                    <tr>
+                        <td ><b>PanCard :</b></td>
+                        <td><input type="text" name="pancard" /></td>
+                    </tr><tr>
+                        <td ><b>AdharCard :</b></td>
+                        <td><input type="text" name="adharcard" /></td>
+                    </tr>
+                    
+                    <tr>
+                        <td align="center"> <input type="submit" value="submit" onclick="javascript.validate" /> </td>
+                    </tr>
+                </tbody>
+            </table>
+                    </form>
+</center>
+    </body>
+</html>
+        

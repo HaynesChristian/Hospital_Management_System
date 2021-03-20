@@ -1,0 +1,59 @@
+    <html>
+        <head>
+
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <script type="text/javascript">
+                function validate()
+                { 
+            if( document.form.Food_Item_Id.value == "" )
+             {
+                alert( "Please provide Item name!" );
+                document.form.Food_Item_Id.focus() ;
+                return false;
+                }
+            if( document.form.Food_Item_Name.value == "" )
+             {
+                alert( "Please provide Item name!" );
+                document.form.Food_Item_Name.focus() ;
+                return false;
+                }
+             
+             if( document.form.Food_Item_Charges.value == "" )
+             {
+                alert( "Please provide Item Charges!" );
+                document.form.Food_Item_Charges.focus() ;
+                return false;
+             }
+           
+            </script>
+        </head>
+        <body>
+            <form method="POST" action="canteenmenu.php" autocomplete="off">
+
+                <center>
+                    <h1>Canteen Menu</h1>
+                <table border="1">
+                    <tbody>
+                        <tr>
+                            <td><b>Food Item Id :</b></td>
+                            <td><input type="text" name="itemiid" /></td>
+                        </tr>
+                        <tr>
+                            <td><b>Food Item Name :</b></td>
+                            <td><input type="text" name="item" /></td>
+                        </tr>
+
+                        <tr>
+                            <td><b>Food Item Charges :</b></td>
+                            <td><input type="text" name="charges" /></td>
+                        </tr>
+                        <tr>
+                            <td align="center"><span><input type="submit" value="submit" onclick="javascript.validate" /></span></td>
+                        </tr>
+                    </tbody>
+                </table>
+                        </form>
+    </center>
+        </body>
+    </html>

@@ -1,0 +1,54 @@
+    <html>
+        <head>
+
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <script type="text/javascript">
+                function validate()
+                { 
+            if( document.form.Date.value == "" )
+             {
+                alert( "Please Enter Item Id!" );
+                document.form.Date.focus() ;
+                return false;
+                }
+             if( document.form.Test_Status.value == "" )
+             {
+                alert( "Please Enter Food Name!" );
+                document.form.Test_Status.focus() ;
+                return false;
+             }
+            </script>
+        </head>
+        <body>
+            <form method="POST" action="testdata.php" autocomplete="off">
+
+                <center>
+                    <h1>Lab Test Details</h1>
+                <table border="1">
+                    <tbody>
+                        <tr>
+                            <td><b>Patient Id :</b></td>
+                            <td><input type="text" name="patientid" /></td>
+                        </tr>
+                        <tr>
+                            <td><b>Test Date :</b></td>
+                            <td><input type="date" name="testdate" /></td>
+                        </tr>
+                        <tr>
+                            <td><b>Test Id :</b></td>
+                            <td><input type="text" name="testid" /></td>
+                        </tr>
+                       <tr>
+                            <td><b>Test Status :</b></td>
+                            <td><input type="text" name="teststatus" /></td>
+                        </tr>
+                        <tr>
+                            <td align="center"><span><input type="submit" value="submit" onclick="javascript.validate" /></span></td>
+                        </tr>
+                    </tbody>
+                </table>
+                        </form>
+    </center>
+        </body>
+    </html>

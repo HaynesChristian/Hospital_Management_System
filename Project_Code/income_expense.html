@@ -1,0 +1,77 @@
+<html>
+    <body>
+        <form method="POST" action="income_expense.php">
+            
+            <center>
+              
+            <table border="5">
+                <tbody>
+                    <tr>
+                        <td><b>Voucher_no : </b></td>
+                        <td> <input type="text" name="no" required /> </td>
+                    </tr>
+                    <tr>
+                        <td><b>Voucher_date :</b></td>
+                        <td><input type="date" name="date" required /></td>
+                    </tr>
+                    
+                    <tr>
+                        <td><b>Account_type :</b></td>
+                        
+                     <td>   <select name="type">
+                            <option value="income">income</option>
+                            <option value="expense">expense</option>
+                            <option value="asset">asset</option>
+                           <option value="liablity">liability</option>
+                       </select></td>
+                    </tr>
+                     <tr>
+                        <td><b>Amount :</b></td>
+                        <td><input type="text" name="amt" required /></td>
+                    </tr>
+                     <tr>
+                        <td><b>Description :</b></td>
+                        <td><input type="text" name="des" required /></td>
+                    </tr>
+                     <tr>
+                        <td><b>Mode :</b></td>
+                       <td>
+                           <input type="radio" name="mode" value="bank"> bank
+                       <input type="radio" name="mode" value="case"> case
+                       <input type="radio" name="mode" value="online"> online</td>
+                    </tr> 
+                    
+                     <tr>
+                        <td><b>Bank Name :</b></td>
+                        <td><input type="text" name="bname" required /></td>
+                    </tr>
+                     <tr>
+                        <td><b>Branch Name :</b></td>
+                        <td><input type="text" name="brname" required /></td>
+                    </tr>
+                      <tr>
+                        <td><b>IFSC Code :</b></td>
+                        <td><input type="text" name="brname" required /></td>
+                    </tr>
+                     <tr>
+                        <td><b>Account No :</b></td>
+                        <td><input type="text" name="brname" required /></td>
+                    </tr>
+                     <tr>
+                        <td><b>cheque No :</b></td>
+                        <td><input type="text" name="cno" required /></td>
+                    </tr>
+                    
+                    
+                    
+           
+                    <tr>
+                               <td colspan="2"> <input type="submit" value="submit" onclick="javascript.validate" /> </td>
+                    </tr>
+                   
+                </tbody>
+            </table>
+                    </form>
+</center>
+    </body>
+</html>

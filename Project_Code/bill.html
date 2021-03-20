@@ -1,0 +1,60 @@
+<html>
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script type="text/javascript">
+            function validate()
+            { 
+        if( document.form.Bill_Date.value == "" )
+         {
+            alert( "Please provide your name!" );
+            document.form.Bill_Date.focus() ;
+            return false;
+            }
+         if( document.form.Patient_Id.value == "" )
+         {
+            alert( "Please provide your name!" );
+            document.form.Patient_Id.focus() ;
+            return false;
+         }
+       if( document.form.Total_Order.value == "" )
+         {
+            alert( "Please Enter Your Designation!" );
+            document.form.Total_Order.focus() ;
+            return false;
+         }
+         if( document.form.Total_Charges.value == "" )
+         {
+            alert( "Please Enter Your Designation!" );
+            document.form.Total_Charges.focus() ;
+            return false;
+         }
+         
+        </script>
+    </head>
+    <body>
+        <form method="POST" action="bill.php" autocomplete="off">
+            
+            <center>
+                <h1>Patient Canteen Bill</h1>
+            <table border="1">
+                <tbody>
+                    <tr>
+                        <td><b>Bill Date :</b></td>
+                        <td><input type="date" name="billdate" /></td>
+                    </tr>
+                    <tr>
+                        <td><b>Patient Id :</b></td>
+                        <td><input type="text" name="patientid" /></td>
+                    </tr>
+                    <tr>
+                        <td align="center"><span><input type="submit" value="submit" onclick="javascript.validate" /></span></td>
+                    </tr>
+                </tbody>
+            </table>
+                    </form>
+</center>
+    </body>
+</html>
+        

@@ -1,0 +1,70 @@
+    <html>
+        <head>
+
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <script type="text/javascript">
+                function validate()
+                { 
+            if( document.form.Test_Id.value == "" )
+             {
+                alert( "Please Select Sample Date!" );
+                document.form.Test_Id.focus() ;
+                return false;
+                }
+             if( document.form.Test_Description.value == "" )
+             {
+                alert( "Please Enter Completion Ratio!" );
+                document.form.Test_Description.focus() ;
+                return false;
+             }
+           if( document.form.Test_Charges.value == "" )
+             {
+                alert( "Please Enter Stored Details!" );
+                document.form.Test_Charges.focus() ;
+                return false;
+             }
+            </script>
+        </head>
+        <body>
+            <form method="POST" action="labsample.php" autocomplete="off">
+
+                <center>
+                    <h1>Lab Test</h1>
+                <table border="1">
+                    <tbody>
+                        <tr>
+                            <td><b>Test Id :</b></td>
+                            <td><input type="text" name="testid" /></td>
+                        </tr>
+                        <tr>
+                            <td><b>Test Description :</b></td>
+                            <td>
+                            <select name="description">
+                                    <option>Blood</option>
+                                    <option>Urine</option>
+                                    <option>X ray</option>
+                                    <option>stool</option>
+                            </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><b>Test Charges :</b></td>
+                            <td>
+                            <select name="testcharges">
+                                    <option>200</option>
+                                    <option>100</option>
+                                    <option>300</option>
+                                    <option>100</option>
+                            </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="center"><span><input type="submit" value="submit" onclick="javascript.validate" /></span></td>
+                        </tr>
+                    </tbody>
+                </table>
+                        </form>
+    </center>
+        </body>
+    </html>

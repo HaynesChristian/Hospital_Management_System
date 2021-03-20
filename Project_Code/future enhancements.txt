@@ -1,0 +1,11 @@
+1) Universal Account no in pf salary slip with pf no.
+2) Bill no. required in every bill and also bill generated date and pay date
+3) Biowaste report generate according to colorwise and it has single agency mostly
+date| company name | red| black | etc
+4) batch_no, quantity, monthwise in medical expiry report
+5) staff report may be for designation wise
+6) Outdoor = consulting doc
+7) Inpatient Payment -> per unit * no of days
+	doctor (no of visit), nursing (days of service), x-ray(copies)
+
+

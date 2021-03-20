@@ -1,0 +1,89 @@
+<html>
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script type="text/javascript">
+            function validate()
+            {
+      
+         if( document.form.Emp_Id.value == "" )
+         {
+            alert( "Please enter your Id!" );
+            document.form.Emp_Id.focus() ;
+            return false;
+         }
+         {
+      
+         if( document.form.Month_code.value == "" )
+         {
+            alert( "Please Select Month Code!" );
+            document.form.Month_code.focus() ;
+            return false;
+         }
+       
+         if( document.form.Working_Days.value == "" )
+         {
+            alert( "Please select Attendance Date!" );
+            document.form.Working_Days.focus() ;
+            return false;
+         }
+         if( document.form.Present_Days.value == "" )
+         {
+            alert( "Please enter your attendance status !" );
+            document.form.Present_Days.focus() ;
+            return false;
+         }
+         if( document.form.Leave_Days.value == "" )
+         {
+            alert( "Please enter your start CL date" );
+            document.form.Leave_Days.focus() ;
+            return false;
+         }
+        </script>
+    </head>
+    <body>
+        <form method="POST" action="attendance.php" autocomplete="off">
+            
+            <center>
+                <h1>Attendance Details</h1>
+            <table border="1">
+                <tbody>
+                    <tr>
+                        <td><b>Employee Id : </b></td>
+                        <td> <input type="text" name="eid" /> </td>
+                    </tr>
+                    <tr>
+                        <td><b>Month Code :</b></td>
+                        <td>
+                            <select name="mcode">
+                                    <option>January</option>
+                                    <option>February</option>
+                                    <option>March</option>
+                                    <option>April</option>
+                                    <option>May</option>
+                                    <option>June</option>
+                                    <option>July</option>
+                                    <option>August</option>
+                                    <option>September</option>
+                                    <option>October</option>
+                                    <option>November</option>
+                                    <option>December</option>
+                                </select>
+                            </td>
+                    </tr>
+                    <tr>
+                        <td><b>Working Days:</b></td>
+                        <td><input type="text" name="working"/></td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="2"> <input type="submit" value="submit" onclick="javascript.validate" /> </td>
+                    </tr>
+                </tbody>
+            </table>
+                    </form>
+</center>
+    </body>
+</html>
+        

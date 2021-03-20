@@ -1,0 +1,102 @@
+    <html>
+        <head>
+
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <script type="text/javascript">
+                function validate()
+                { 
+            if( document.form.Bill_id.value == "" )
+             {
+                alert( "Please Enter Your Cleaning Month!" );
+                document.form.Bill_id.focus() ;
+                return false;
+                }
+             if( document.form.FoodPlate_id.value == "" )
+             {
+                alert( "Please Select Your Cleaning Year!" );
+                document.form.FoodPlate_id.focus() ;
+                return false;
+             }
+           if( document.form.Patient_OtherFood_id.value == "" )
+             {
+                alert( "Please Enter Your Cleaning Count!" );
+                document.form.Patient_OtherFood_id.focus() ;
+                return false;
+             }
+             
+            </script>
+        </head>
+        <body>
+            <form method="POST" action="order.php" autocomplete="off">
+
+                <center>
+                    <h1>Patient Canteen Order</h1>
+                <table border="1">
+                    <tbody>
+                        <tr>
+                            <td><b>Patient Id :</b></td>
+                            <td><input type="text" name="patientid" /></td>
+                        </tr>
+
+                        <tr>
+                            <td><b>Order Id :</b></td>
+                            <td><input type="text" name="orderid" /></td>
+                        </tr>
+                        <tr>
+                            <td><b>Order Date :</b></td>
+                            <td><input type="date" name="orderdate" /></td>
+                        </tr>
+                        <tr>
+                            <td><b>Item Id1 :</b></td>
+                            <td><input type="text" name="itemid1" /></td>
+                        </tr>
+
+                        <tr>
+                            <td><b>Description1 :</b></td>
+                            <td><input type="text" name="desription1" /></td>
+                        </tr>
+                        <tr>
+                            <td><b>Quantity1 :</b></td>
+                            <td><input type="text" name="quantity1" /></td>
+                        </tr>
+                        
+                        <tr>
+                            <td><b>Item Id2 :</b></td>
+                            <td><input type="text" name="itemid2" /></td>
+                        </tr>
+
+                        <tr>
+                            <td><b>Description2 :</b></td>
+                            <td><input type="text" name="description2" /></td>
+                        </tr>
+                        <tr>
+                            <td><b>Quantity2 :</b></td>
+                            <td><input type="text" name="quantity2" /></td>
+                        </tr>
+                        <tr>
+                            <td><b>Item Id3 :</b></td>
+                            <td><input type="text" name="itemid3" /></td>
+                        </tr>
+
+                        <tr>
+                            <td><b>Description3 :</b></td>
+                            <td><input type="text" name="description3" /></td>
+                        </tr>
+                        <tr>
+                            <td><b>Quantity3 :</b></td>
+                            <td><input type="text" name="quantity3" /></td>
+                        </tr>
+                        <tr>
+                            <td><b>Order Amount :</b></td>
+                            <td><input type="text" name="orderamount" /></td>
+                        </tr>
+                        <tr>
+                            <td align="center"><span><input type="submit" value="submit" onclick="javascript.validate" /></span></td>
+                        </tr>
+                    </tbody>
+                </table>
+                        </form>
+    </center>
+        </body>
+    </html>

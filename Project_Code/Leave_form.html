@@ -1,0 +1,49 @@
+<html>
+    <body>
+        <form method="POST" action="Leave_form.php" autocomplete="off">
+            
+            <center>
+                <h1>Leave Details</h1>
+            <table border="1">
+                <tbody>
+                    <tr>
+                        <td><b>Emp Id : </b></td>
+                        <td> <input type="text" name="id" /> </td>
+                    </tr>
+                    <tr>
+                        <td><b>Type of leave :</b></td>
+                        <td>
+                            <select name="type">
+                                    <option>CL</option>
+                                    <option>SL</option>
+                                    <option>PL</option>
+                            </select>
+                            </td>
+                    </tr>
+                    
+                    <tr>
+                        <td><b>From Date :</b></td>
+                        <td><input type="date" name="lfrom" /></td>
+                    </tr>
+                    
+                    <tr>
+                        <td><b>To Date :</b></td>
+                        <td><input type="date" name="lto" /></td>
+                    </tr>
+                    
+                    <tr>
+                        <td><b>Total leave :</b></td>
+                        <td><input type="text" name="total" /></td>
+                    </tr>
+                    
+                    
+                    <tr>
+                               <td colspan="3"> <input type="submit" value="submit" onclick="javascript.validate" /> </td>
+                    </tr>
+                   
+                </tbody>
+            </table>
+                    </form>
+</center>
+    </body>
+</html>

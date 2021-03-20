@@ -1,0 +1,74 @@
+    <html>
+        <head>
+
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <script type="text/javascript">
+                function validate()
+                { 
+             if( document.form.room_type_name.value == "" )
+             {
+                alert( "Please provide Item Charges!" );
+                document.form.room_type_name.focus() ;
+                return false;
+             }
+             if( document.form.room_price.value == "" )
+             {
+                alert( "Please provide Item Charges!" );
+                document.form.room_price.focus() ;
+                return false;
+             }
+           
+            </script>
+        </head>
+        <body>
+            <form method="POST" action="roomservice.php" autocomplete="off">
+                    
+                <center>
+                    <h1>Room Details</h1>
+                <table border="1">
+                    <tbody>
+                        <tr>
+                            <td><b>Room Id :</b></td>
+                            <td><input type="text" name="roomid" /></td>
+                        </tr>
+                        <tr>
+                            <td><b>Room Type :</b></td>
+                            <td>
+                                <select name="roomtype">
+                                    <option>General</option>
+                                    <option>Semi</option>
+                                    <option>Special</option>
+                                    <option>Deluxe</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><b>Room Price :</b></td>
+                            <td>
+                                <select name="price">
+                                    <option>500</option>
+                                    <option>1000</option>
+                                    <option>2000</option>
+                                    <option>3000</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><b>Room Status :</b></td>
+                            <td>
+                                <select name="roomstatus">
+                                    <option>Available</option>
+                                    <option>UnAvailable</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="center"><span><input type="submit" value="submit" onclick="javascript.validate" /></span></td>
+                        </tr>
+                    </tbody>
+                </table>
+                        </form>
+    </center>
+        </body>
+    </html>
